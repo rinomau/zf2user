@@ -1,0 +1,23 @@
+<div class="row-fluid">
+    <div class="span12">
+        <h3>Dati di <?php echo $this->user->getName(); ?></h3>
+    </div>
+</div>
+
+<?php echo $this->DisplayFlash($this->flashMessages); ?>
+
+
+<div class="row-fluid">
+    <div class="span6">
+            <?php
+            $this->contactForm->setAttribute('action', $this->url('userdetail', array('action' => 'process-contact')));
+            echo $this->renderForm($this->contactForm,'Dati contatto');
+            ?>
+    </div>
+    <div class="span6">
+            <?php
+            $this->accessForm->setAttribute('action', $this->url('userdetail', array('action' => 'process-access')));
+            echo $this->renderForm($this->accessForm,'Dati di accesso');
+            ?>
+    </div>
+</div>
