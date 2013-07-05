@@ -12,6 +12,14 @@ class IndexController extends \MvaCrud\Controller\CrudIndexController {
         $entityName = 'User';
         parent::__construct($entityName, $I_service, $I_form, $as_config);
     }
+    
+    public function rolesAction(){
+        $aI_roles = $this->I_roleService->getAll();
+        return new ViewModel(array(
+            'users' => $aI_users,
+            'flashMessages' => $this->flashMessenger()->setNamespace('user')->getMessages()
+            ));
+    }
 }
 /*
 class IndexController extends AbstractActionController
