@@ -67,8 +67,8 @@ return array(
             // 's_detailTemplate'  => 'crud/index/detail',
             's_processErrorTitle'       => 'Form errors page default',
             //'s_processErrorTemplate'    => 'crud/index/default-form',
-            's_deleteRouteRedirect'     => 'index',
-            's_processRouteRedirect'     => 'index',
+            's_deleteRouteRedirect'     => 'users',
+            's_processRouteRedirect'     => 'users',
         )
     )
 );

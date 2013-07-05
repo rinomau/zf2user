@@ -8,21 +8,6 @@ class UserFilter extends InputFilter {
 
 public function __construct($I_entityManager) {
     
-     $this->add(array(
-            'name'       => 'name',
-            'required'   => true,
-            'filters' => array(
-                array('name' => 'StringTrim'),
-                array('name' => 'StripTags'),
-            ),
-            'validators' => array(
-                array(
-                    'name' => 'not_empty'
-                    ),
-                )
-            )
-        );
-
      $I_emailValidator = new \Users\Validator\NoObjectExists(array(
         'object_repository' => $I_entityManager->getRepository('Users\Entity\Systemuser'),
         'fields' => array('email'),
@@ -39,36 +24,6 @@ public function __construct($I_entityManager) {
         ),
     ));
         
-    $this->add(array(
-        'name'       => 'role',
-        'required'   => true,
-        'filters' => array(
-            array('name' => 'StringTrim'),
-            array('name' => 'StripTags'),
-        ),
-        'validators' => array(
-            array(
-                'name' => 'not_empty'
-                ),
-            )
-        )
-    );
-       
-    $this->add(array(
-        'name'       => 'isenabled',
-        'required'   => true,
-        'filters' => array(
-            array('name' => 'StringTrim'),
-            array('name' => 'StripTags'),
-        ),
-        'validators' => array(
-            array(
-                'name' => 'not_empty'
-                ),
-            )
-        )
-    );
-       
     $this->add(array(
         'name'       => 'password',
         'required'   => true,

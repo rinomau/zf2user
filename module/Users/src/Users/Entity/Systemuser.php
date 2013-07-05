@@ -109,6 +109,9 @@ class Systemuser implements UserInterface, ProviderInterface
     {
         return $this->username;
     }
+    public function getName(){
+        return $this->getEmail();
+    }
 
     /**
      * Set username.
