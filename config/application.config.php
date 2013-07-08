@@ -2,13 +2,13 @@
 return array(
     // This should be an array of module namespaces used in the application.
     'modules' => array(
+        'MvaCrud',
         'ZfcBase',
         'ZfcUser',
         'BjyAuthorize',
         'DoctrineModule',
         'DoctrineORMModule',
         'ZfcUserDoctrineORM',
-        'MvaCrud',
         'Application',
         'Users',
     ),
