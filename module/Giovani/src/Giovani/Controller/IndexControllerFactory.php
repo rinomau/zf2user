@@ -22,7 +22,7 @@ class IndexControllerFactory implements FactoryInterface
         $I_giovaniForm = new \Giovani\Form\Giovane($meta->fieldMappings);
         $I_giovaniFormFilter = new \Giovani\Form\GiovaneFilter($I_entityManager);
         $I_giovaniForm->setInputFilter($I_giovaniFormFilter);
-        $I_giovaniForm->setAttribute('action', '/users/process');
+        $I_giovaniForm->setAttribute('action', '/giovani/process');
         
         return new IndexController($I_giovaniService,$I_giovaniForm,$as_config['MvaCrud']);
         

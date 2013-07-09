@@ -74,6 +74,10 @@ class Giovane
      * @ORM\Column(type="boolean", nullable=false)
      */
     protected $promotore;
+    
+    public function getName(){
+        return $this->getName().' '.$this->getCognome();
+    }
 
 
     public function getCognome() {
