@@ -76,7 +76,7 @@ class Giovane
     protected $promotore;
     
     public function getName(){
-        return $this->getName().' '.$this->getCognome();
+        return $this->getNome().' '.$this->getCognome();
     }
 
 
