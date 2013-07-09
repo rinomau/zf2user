@@ -31,7 +31,7 @@ class Giovane extends Form
         $canale->setLabel('Canale');
         $this->add($canale);
         
-        $data_di_nascita = new Element\Text('data_di_nascita');
+        $data_di_nascita = new Element\Text('datadinascita');
         $data_di_nascita->setLabel('Data di nascita');
         $this->add($data_di_nascita);
         

@@ -72,7 +72,7 @@ return array(
     'MvaCrud' => array(
         __NAMESPACE__ => array(
             's_indexTitle'      => 'Gestione curriculum vitae',
-            's_indexTemplate'   => 'giovani/index/index',
+            //'s_indexTemplate'   => 'giovani/index/index',
             's_newTitle'        => 'Inserisci nuovo cv',
             // 's_newTemplate'     => 'users/index/default-form',
             's_editTitle'       => 'Modifica dati utente',

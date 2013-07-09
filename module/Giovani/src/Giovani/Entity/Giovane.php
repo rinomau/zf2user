@@ -151,12 +151,7 @@ class Giovane
         $this->promotore = $promotore;
         return $this;
     }
-
     
-
-
-
-
     /**
      * Get the id.
      *
